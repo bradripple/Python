@@ -24,4 +24,10 @@
 # Addition +
 # Substraction -
 
-print(3 * 3 + 3 / 3 - 3)
+# print(3 * 3 + 3 / 3 - 3)
+
+score = 0
+height = 1.8
+is_winning = True
+
+print(f"your score is {score}, your height is {height}, you are winning {is_winning}")
