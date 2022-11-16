@@ -8,5 +8,5 @@ bill_amount = float(bill)
 given_percent = int(percentage) / 100 + 1
 bill_and_tip = bill_amount * given_percent
 total_pp = bill_and_tip / int(people)
-total = round(total_pp, 3)
+total = round(total_pp, 2)
 print(f"Each person owes: ${total}")
