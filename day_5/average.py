@@ -4,10 +4,15 @@ for n in range(0, len(student_heights)):
 
 print(student_heights)
 
-count = 0
-height = 0
+# count = 0
+# height = 0
 
-for heights in student_heights:
-    count = count + 1
-    height = height + heights
-print(round(height / count))
+# for heights in student_heights:
+#     count = count + 1
+#     height = height + heights
+# print(round(height / count))
+
+# Solved usinig  sum and len
+# total_height = sum(student_heights)
+# number_of_students = len(student_heights)
+# average_height = round(total_height / number_of_students)
