@@ -13,7 +13,7 @@ max = 0
 for score in student_scores:
     if max < score:
         max = score
-print("The highest score in the class is: " + str(max))
+print(f"The highest score in the class is: {max}")
 
 # Course solution
 highest_score = 0
