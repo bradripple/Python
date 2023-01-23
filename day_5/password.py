@@ -11,26 +11,32 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 
-# password = ""
+password = []
 
 
-# for letter in letters:
-#     if nr_letters > 0:
-#         nr_letters -= 1
-#         password += letter
+for letter in letters:
+    if nr_letters > 0:
+        nr_letters -= 1
+        password += letter
 
-# for symbol in symbols:
-#     if nr_symbols > 0:
-#         nr_symbols -= 1
-#         password += symbol
+for symbol in symbols:
+    if nr_symbols > 0:
+        nr_symbols -= 1
+        password += symbol
 
-# for num in numbers:
-#     if nr_numbers > 0:
-#         nr_numbers -= 1
-#         password += num
+for num in numbers:
+    if nr_numbers > 0:
+        nr_numbers -= 1
+        password += num
 
+random.shuffle(password)
 
-# print(password)
+randomized_password = ""
+
+for char in password:
+    randomized_password += char
+
+print(f"Your password is: {randomized_password}")
 
 # Course solution
 
@@ -79,25 +85,25 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 # Course Hard solution
 
-password_list = []
+# password_list = []
 
-for char in range(1, nr_letters + 1):
-    # 1 - 4
-    password_list.append(random.choice(letters))
+# for char in range(1, nr_letters + 1):
+#     # 1 - 4
+#     password_list.append(random.choice(letters))
 
-for char in range(1, nr_symbols + 1):
-    password_list.append(random.choice(symbols))
+# for char in range(1, nr_symbols + 1):
+#     password_list.append(random.choice(symbols))
 
-for char in range(1, nr_numbers + 1):
-    password_list.append(random.choice(numbers))
-
-
-random.shuffle(password_list)
-
-password = ""
-
-for char in password_list:
-    password += char
+# for char in range(1, nr_numbers + 1):
+#     password_list.append(random.choice(numbers))
 
 
-print(f'Your password is: {password}')
+# random.shuffle(password_list)
+
+# password = ""
+
+# for char in password_list:
+#     password += char
+
+
+# print(f'Your password is: {password}')
